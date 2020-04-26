@@ -54,7 +54,6 @@ class Pelicula{
   }//Fin del constructor
 
   //Funcion de verificarion de número de película
- // friend bool verificarNum(int num,int cantPeliculas,Pelicula obj[20]);
   
 //Contructor por parametros
   Pelicula(int Np,int An,int Du,string Ge,int Ca,Actor lista[10],string NombrePelicula){
@@ -129,7 +128,7 @@ string Cortar(string x,int p){
 }
 
 
-
+//Funcion para la verificación de del número de pelicula
 bool verificarNum(int num,int cantPeliculas,Pelicula obj[]){
 int z=0;
 while(z<cantPeliculas){
@@ -141,6 +140,8 @@ while(z<cantPeliculas){
 return false;
 }
 
+//Funcion multiString recibe un entero un un string(pensado para un caracter)
+//Regresa un stringcon varios caracteres segun el entero 
 string multiString(int n, string linea){
   int ze=0;
   string nLinea;
@@ -180,12 +181,13 @@ void impresion1(int f){
 
 }
 
-
+//Funcion para pausar el proceso
 void wait(){
   cin.ignore();
   cout<<"PRESIONE ENTER PARA CONTINUAR";
   cin.get();
 }
+
 
 string cleanR(string linea){
   linea=linea.erase(linea.size() - 1); 
