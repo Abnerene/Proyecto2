@@ -654,9 +654,9 @@ void menu(Actor actor[],Pelicula pelicula[],Funcion funciones[]){
     again5:;
 		string clave;
 		buscarClaveText();
-		cout<<"▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"<<endl;
-    cout<<"█ Ingrese la clave de funcion █"<<endl;
-    cout<<"▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"<<endl;
+    		cout<<"▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"<<endl;
+    		cout<<"█ Ingrese la clave de funcion █"<<endl;
+    		cout<<"▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"<<endl;
 		cout<<endl<<"Clave: ";
 		cin>>clave;
 		
@@ -751,15 +751,15 @@ void menu(Actor actor[],Pelicula pelicula[],Funcion funciones[]){
 	//Inicion de la opcion 6 buscar Peliculas por Actor
 
 	else if(op == 6){
-		again6:;
-		buscarActorText();
-		int id;
-		cout<<"▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"<<endl;
-    cout<<"█ Ingrese el id del actor █"<<endl;
-    cout<<"▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"<<endl;
-		cout<<endl<<"Id: ";
-		cin>>id;
-		int countA=0;
+	  again6:;
+	  buscarActorText();
+	  int id;
+	  cout<<"▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"<<endl;
+	  cout<<"█ Ingrese el id del actor █"<<endl;
+	  cout<<"▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀"<<endl;
+	  cout<<endl<<"Id: ";
+	  cin>>id;
+	  int countA=0;
 		while(countA<a){
 			if(id == actor[countA].getId()){
 				break;
